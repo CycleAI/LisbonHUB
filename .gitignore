@@ -1,6 +1,9 @@
 # Markdown Backup
 *.md.backup
 
+# Mac
+.DS_Store
+
 # Folders to ignore
 bkp/
 docs/
