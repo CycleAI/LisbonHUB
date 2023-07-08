@@ -29,7 +29,7 @@ Data Source: [Nominatim API](https://nominatim.openstreetmap.org/search.php?q=Li
 This notebook calculates a route factor for each type of route (shortest, balanced, safest) using the following formula:
 
 $$
-\text{Route factor} = \frac{1}{k} \times \left(\sum_{i=1}^k\frac{\text{0,6} \times \text{TravelTime}}{\ text{15 min}} + \sum_{i=1}^k\frac{\text{0,4} \times \text{TotalDistance}}{\text{5 km}}\right)
+\text{Route factor} = \frac{1}{k} \times \left(\sum_{i=1}^k\frac{\text{0,6} \times \text{TravelTime}}{ \text{15 min}} + \sum_{i=1}^k\frac{\text{0,4} \times \text{TotalDistance}}{\text{5 km}}\right)
 $$
 
 where:
