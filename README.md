@@ -1,7 +1,5 @@
 # LisbonHUB: Advancing Urban Micromobility
 
-## A Data-Driven Approach to Safety Mapping and Intelligent Route Planning
-
 This repository is part of the VoxPop Lisbon project by CycleAI.
 
 ## Overview
