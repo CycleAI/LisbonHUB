@@ -1,6 +1,4 @@
-I would suggest updating your README to look something like this:
-
-"# LisbonHUB: Advancing Urban Micromobility
+# LisbonHUB: Advancing Urban Micromobility
 
 ## A Data-Driven Approach to Safety Mapping and Intelligent Route Planning
 
@@ -48,4 +46,4 @@ This Python script calculates the distance and travel time between two sets of c
 
 ---
 
-For any questions or feedback, please contact the author at <contact@cycleai.net>."
+For any questions or feedback, please contact the author at <contact@cycleai.net>.
