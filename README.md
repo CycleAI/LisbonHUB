@@ -1,47 +1,48 @@
-# LisbonHUB: Advancing Urban Micromobility
+# LisbonHUB · safety mapping and route planning
 
-This repository is part of the VoxPop Lisbon project by CycleAI.
+Code and data for the VoxPop Lisbon project and the study **Data-Driven Approach
+for Urban Micromobility Enhancement through Safety Mapping and Intelligent Route Planning**.
 
-## Overview
+## Repository version
 
-This repository contains the codes and data to be able to reproduce the article "Data-Driven Approach for Urban Micromobility Enhancement through Safety Mapping and Intelligent Route Planning".
+This is the earlier standalone CycleAI snapshot of the VoxPop Lisbon work.
+For the collaboration fork, see [CycleAI/Lisbon-Hub](https://github.com/CycleAI/Lisbon-Hub),
+which retains its connection to [VoxPop-Open-Call/Lisbon-Hub](https://github.com/VoxPop-Open-Call/Lisbon-Hub).
 
-## Notebooks
+Both CycleAI repositories contain the same four analysis notebooks and matching
+route-data values. The different bytes in `routing_results.csv` come from line
+endings, not different observations. Use the collaboration fork as the starting
+point for this project; the standalone repository preserves its separate history.
+Record the repository and commit when reproducing an analysis.
 
-### 1. One Hundred Random Points Generator
+## Explore the project
 
-**Author:** Tiago Tamagusko (<tamagusko@gmail.com>)  
-**Version:** 0.1 beta  
-**Date:** 2023-05-25  
+| Location | Contents |
+| --- | --- |
+| [src/](src/) | Random-point generation, route checking, route-factor calculation and Google distance comparison notebooks. |
+| [data/](data/README.md) | Route outputs, filtered analyses and the 100-route comparison tables. |
+| [routeExample/](routeExample/) | Shortest, balanced and safest route examples, plus a GeoJSON benchmark. |
+| [img/](img/) | Heatmaps of detected streetscape features. |
 
-This notebook creates 100 random points within set limits.
+## Notebook guide
 
-Data Source: [Nominatim API](https://nominatim.openstreetmap.org/search.php?q=Lisbon+Portugal&polygon_geojson=1&format=json)  
+| Notebook | Purpose |
+| --- | --- |
+| [Generate random points](src/20230525_OneHundredRandomPoints_CycleAI.ipynb) | Generate 100 points within the study boundary using geographic data. |
+| [Check route results](src/20230607_RouteResultsChecker.ipynb) | Check route types, coordinates, distances and durations. |
+| [Calculate route factors](src/routeFactorCalculator.ipynb) | Compare the shortest, balanced and safest route alternatives. |
+| [Google distance comparison](src/googleDistanceCalculator.ipynb) | Obtain distance and duration comparisons through the Google Maps API. |
 
-### 2. Route Factor Calculator
+Read the notebook's imports and input/output paths before running it. Supply your
+own API access where required. A fully pinned environment and one-command rebuild
+are not provided. Use the [data guide](data/README.md) to distinguish intermediate
+route outputs from the curated comparison tables.
 
-**Author:** Tiago Tamagusko (<tamagusko@gmail.com>)  
-**Version:** 0.1 beta  
-**Date:** 2023-06-22  
+## Attribution and reuse
 
-This notebook calculates a route factor for each type of route (shortest, balanced, safest) using a specific formula.
+The original notebook documentation credits [Tiago Tamagusko](https://github.com/tamagusko)
+and dates the work to May–June 2023. Keep that attribution when reusing the work.
+Check upstream project and data-source terms; public availability alone does not
+establish permission to redistribute all inputs.
 
-### 3. Route Results Checker
-
-**Author:** Tiago Tamagusko (<tamagusko@gmail.com>)  
-**Version:** 0.1 beta  
-**Date:** 2023-06-07  
-
-This notebook validates the output results of the routes. It checks the consistency of calculated paths, correct route types, consistent coordinates, distances, and durations.
-
-### 4. Google Maps Distance and Duration Calculator
-
-**Author:** Tiago Tamagusko (<tamagusko@gmail.com>)  
-**Version:** 0.1 beta  
-**Date:** 2023-06-23  
-
-This Python script calculates the distance and travel time between two sets of coordinates using the Google Maps Distance Matrix API. The data is read from a CSV file, the calculations are performed, and the results are written back into the dataset.
-
----
-
-For any questions or feedback, please contact the author at <contact@cycleai.net>.
+[CycleAI research catalogue](https://github.com/CycleAI) · [Contact](mailto:contact@cycleai.net)

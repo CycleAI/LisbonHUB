@@ -1,4 +1,6 @@
-# About this data
+# Lisbon route data
+
+[Project guide](../README.md) · [Notebooks](../src/)
 
 This data folder is part of the VoxPop Lisbon project by CycleAI. It contains multiple CSV files used in the data analysis and route generation process.
 
@@ -8,7 +10,7 @@ This data folder is part of the VoxPop Lisbon project by CycleAI. It contains mu
 
 This file contains the routing results produced by our system for all routes.
 
-### 2. routes_without_errors.csv
+### 2. routes_without_erros.csv
 
 This file contains all the routes without any detected errors. It was generated but not used in our final analysis. We opted to use the filtered_data.csv file instead.
 
@@ -35,3 +37,10 @@ This file contains the final set of 100 routes, with both our calculated routes 
 ---
 
 For any questions or feedback about the data files, please contact the author at <contact@cycleai.net>.
+
+## Version provenance
+
+The standalone `LisbonHUB` repository and the collaboration fork `Lisbon-Hub`
+have matching values in `routing_results.csv` (626 data rows); the file-byte
+difference is line-ending formatting. Record the repository and commit used.
+The collaboration fork is the suggested starting point for the project.
